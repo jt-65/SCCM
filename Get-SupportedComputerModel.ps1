@@ -34,12 +34,12 @@
     This is a Dell shop with a smattering of HP systems.  If support for other manufactureres is needed, 
     the ForEach loop will need to be modified accordingly.
 .EXAMPLE
-    PS> Get-SupportedComputerModel.ps1 -URI 'http://CMSERVER.company.local/ConfigMgrWebService/ConfigMgr.asmx' -SecretKey '1c83bfeb-8c32-49df-866b-a33e896c5f83' -Destination '\\CMSERVER\C$\Inetpub\ConfigMgr WebServer\HWModel.txt'
+    PS> Get-SupportedComputerModel.ps1 -URI 'http://CMSERVER.company.local/ConfigMgrWebService/ConfigMgr.asmx' -SecretKey '1c83bfeb-8c32-49df-866b-a33e896c5f83' -Destination '\\CMSERVER\C$\Inetpub\ConfigMgr WebServer\HWModels.txt'
 
     Generates a list of MDM-supported computer models and creates/replaces the HWModels.txt file on the WebService server.
 
 .EXAMPLE
-    PS> Get-SupportedComputerModel.ps1 -URI 'http://CMSERVER.company.local/ConfigMgrWebService/ConfigMgr.asmx' -SecretKey '1c83bfeb-8c32-49df-866b-a33e896c5f83' -Destination '\\CMSERVER\C$\Inetpub\ConfigMgr WebServer\HWModel.txt' -PilotDrivers
+    PS> Get-SupportedComputerModel.ps1 -URI 'http://CMSERVER.company.local/ConfigMgrWebService/ConfigMgr.asmx' -SecretKey '1c83bfeb-8c32-49df-866b-a33e896c5f83' -Destination '\\CMSERVER\C$\Inetpub\ConfigMgr WebServer\HWModels.txt' -PilotDrivers
 
     Generates a list of for MDM-supported computer models with 'pilot' drivers and creates/replaces the WHModels.txt file on the WebService server.
 #>
