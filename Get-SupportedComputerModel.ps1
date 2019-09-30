@@ -30,6 +30,9 @@
         Author: John Trask
         Purpose/Change(s):
             Added Param block rather than hardcoding everything.
+            
+    This is a Dell shop with a smattering of HP systems.  If support for other manufactureres is needed, 
+    the ForEach loop will need to be modified accordingly.
 .EXAMPLE
     PS> Get-SupportedComputerModel.ps1 -URI 'http://CMSERVER.company.local/ConfigMgrWebService/ConfigMgr.asmx' -SecretKey '1c83bfeb-8c32-49df-866b-a33e896c5f83' -Destination '\\CMSERVER\C$\Inetpub\ConfigMgr WebServer\HWModel.txt'
 
